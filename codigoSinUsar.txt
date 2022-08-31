@@ -1,0 +1,25 @@
+FuntionApp:
+  const [estadoCarrito, setEstadoCarrito] = useState("Carrito vacio")
+  const [numeroProductos, setNumeroProductos] = useState(0);
+
+  useEffect(()=>{
+    setTimeout(() => {
+      setEstadoCarrito("Esperando productos")
+    }, 3000);
+  },[numeroProductos])
+
+  const agregar = (productos)=>{
+    setNumeroProductos(productos);
+    setEstadoCarrito(`el carrito tiene ${productos}`);
+  }
+
+Return:
+{/*
+      <div className="App">
+        <header className="App-header">
+          <ItemCount stock={10} initial={0} agregarProducto={agregar}></ItemCount>
+          <Carrito numeroCarrito={numeroProductos}/>
+          <p>{estadoCarrito}</p>
+        </header>
+      </div>
+      */}

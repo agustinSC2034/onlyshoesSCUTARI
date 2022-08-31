@@ -1,0 +1,18 @@
+.product{
+    color: black;
+    text-align: center;
+    padding-bottom: 15px;
+    
+    
+}
+
+.product img {
+  width: 85%;
+}
+
+.product:hover {
+    box-shadow: 0 0 10px #111111, 0 0 40px;
+    transform: scale(1.1);
+  }
+
+

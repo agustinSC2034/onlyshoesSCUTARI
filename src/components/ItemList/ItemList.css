@@ -1,0 +1,21 @@
+.grid-product {
+    display: grid;
+    margin: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+
+h1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+h1, h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #333;
+    font-size: x-large;
+}
