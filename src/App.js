@@ -8,6 +8,7 @@ import { Button } from 'bootstrap';
 import { Temas } from "./Temas/Temas";
 import ItemCount from "./components/ItemCount/ItemCount.js";
 import { Carrito } from "./components/Carrito/Carrito";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
       </Navbar>
         <div className="App">
           <ItemListContainer/>
+          <ItemDetailContainer/>
         </div>
     </>
   );
