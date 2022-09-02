@@ -4,11 +4,11 @@
     justify-content: center;
     width: 500px;
     text-align:center;
-    color: #fafafa;
+    color: black;
 }
 
 h2{
-    color: #fafafa;
+    color: black;
 }
 
 .item-detail img {
@@ -25,5 +25,9 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:#fafafa;
+    color:black;
+}
+
+.btn btn-primary {
+    display: flex;
 }
