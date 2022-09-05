@@ -9,17 +9,23 @@ import { Temas } from "./Temas/Temas";
 import ItemCount from "./components/ItemCount/ItemCount.js";
 import { Carrito } from "./components/Carrito/Carrito";
 import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
 function App() {
 
   return (
     <>
+    <BrowserRouter>
       <Navbar CartWidget={CartWidget}>
+        <Routes>
+          <Route></Route>
+        </Routes>
       </Navbar>
         <div className="App">
           <ItemListContainer/>
-          <ItemDetailContainer/>
+          {/*<ItemDetailContainer/>*/}
         </div>
+        </BrowserRouter>
     </>
   );
 }

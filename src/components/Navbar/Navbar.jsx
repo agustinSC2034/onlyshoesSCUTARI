@@ -13,11 +13,13 @@ const Navbar = (props) => {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
+                    {/* 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             MARCAS
                         </a>
+                        
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="pages/marcas/nike.html">Nike</a></li>
                             <li><a class="dropdown-item" href="pages/marcas/puma.html">Puma</a></li>
@@ -32,15 +34,17 @@ const Navbar = (props) => {
                             <li><a class="dropdown-item" href="pages/marcas/underArmour.html">Under Armour</a></li>
                             <li><a class="dropdown-item" href="pages/marcas/vans.html">Vans</a></li>
                         </ul>
+                        
+                    </li>
+                    */}
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">NIKE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
+                        <a class="nav-link" href="pages/contacto.html">ADIDAS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="pages/favoritos.html">WATCHLIST</a>
+                        <a class="nav-link" href="pages/favoritos.html">PUMA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/carrito.html">CARRITO</a>
