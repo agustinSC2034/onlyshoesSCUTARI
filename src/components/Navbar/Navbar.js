@@ -1,8 +1,13 @@
+import CartWidget from "../CartWidget/CartWidget";
+import './Navbar.css';
+import {Link} from "react-router-dom";
+
+
 const Navbar = (props) => {
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navMIO">
         <div class="container-fluid">
-        <a class="navbar-brand logoMio" href="#">OnlyShoes {props.CartWidget()}</a>
+        <Link class="navbar-brand logoMio" to="/">OnlyShoes {props.CartWidget()}</Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -11,7 +16,7 @@ const Navbar = (props) => {
             <div class="collapse navbar-collapse navLiMio" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navUL">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        <Link class="nav-link active" to="/">HOME</Link>
                     </li>
                     {/* 
                     <li class="nav-item dropdown">
@@ -38,16 +43,22 @@ const Navbar = (props) => {
                     </li>
                     */}
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/nosotros.html">NIKE</a>
+                    <Link class="nav-link" to="/Marcas/Nike">NIKE</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/contacto.html">ADIDAS</a>
+                    <Link class="nav-link" to="/Marcas/Adidas">ADIDAS</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/favoritos.html">PUMA</a>
+                    <Link class="nav-link" to="/Marcas/Puma">PUMA</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/carrito.html">CARRITO</a>
+                    <Link class="nav-link" to="/Nosotros">NOSOTROS</Link>
+                    </li>
+                    <li class="nav-item">
+                    <Link class="nav-link" to="/Contacto">CONTACTO</Link>
+                    </li>
+                    <li class="nav-item">
+                    <Link class="nav-link" to="/CarritoPage">CARRITO</Link>
                     </li>
                 </ul>
             </div>

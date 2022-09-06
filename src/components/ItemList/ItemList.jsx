@@ -16,7 +16,7 @@ const ItemList = () => {
 
     return(
         <>
-        <h1>Productos en stock</h1>
+        <h1>ONLYSHOES</h1>
         {
           loading ? <h2>Espere por favor...</h2>
           :
