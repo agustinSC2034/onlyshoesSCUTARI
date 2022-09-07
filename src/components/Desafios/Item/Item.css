@@ -9,9 +9,12 @@
 .product img {
   width: 85%;
 }
+.product h4{
+  font-size: 20px;
+}
 
 .product:hover {
-    box-shadow: 0 0 10px #111111, 0 0 40px;
+    box-shadow: 0 0 7px #111111, 0 0 40px;
     transform: scale(1.1);
   }
 
