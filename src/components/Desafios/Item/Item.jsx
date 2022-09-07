@@ -9,7 +9,7 @@ export const Item = ({item})=>{
           <img src={item.img} alt={item.title}/>
           <h4>{item.nombre}</h4>
           <p>$ {item.precio}</p>
-          <Link to={`/data/${item.id}`}>
+          <Link to={`/item/${item.id}`}>
           <button className="btn btn-primary">Ver detalle</button>
           </Link>
       </div>

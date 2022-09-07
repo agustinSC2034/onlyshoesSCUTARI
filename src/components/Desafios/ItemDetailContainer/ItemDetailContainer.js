@@ -2,13 +2,18 @@ import { useState, useEffect } from "react";
 import './ItemDetailContainer.css';
 import { arregloProductos } from "../../baseDatos/helper";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 export const ItemDetailContainer = ()=>{
+    const {productId} = useParams();
+    console.log("productoId",productId);
     const [item, setItem] = useState({});
 
-    const getItem = ()=>{
+    const getItem = (id)=>{
         return new Promise((resolve, reject)=>{
-            resolve(arregloProductos[0])
+            const product = arregloProductos.find(item=>item.id === parseInt(productId));
+            console.log(product);
+            resolve(product)
         })
     }
 
@@ -19,7 +24,7 @@ export const ItemDetailContainer = ()=>{
             setItem(producto);
         }
         getProducto();
-    },[])
+    },[productId])
 
     console.log('item:', item)
     return(
