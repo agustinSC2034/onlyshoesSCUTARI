@@ -3,7 +3,7 @@ import './Navbar.css';
 import {Link} from "react-router-dom";
 
 
-const Navbar = (props) => {
+export const Navbar = (props) => {
     return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark navMIO">
         <div class="container-fluid">
@@ -66,5 +66,3 @@ const Navbar = (props) => {
     </nav>
     );
   }
-
-  export default Navbar;
