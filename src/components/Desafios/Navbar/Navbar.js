@@ -58,7 +58,7 @@ export const Navbar = (props) => {
                     <Link class="nav-link" to="/Contacto">CONTACTO</Link>
                     </li>
                     <li class="nav-item">
-                    <Link class="nav-link" to="/CarritoPage">CARRITO</Link>
+                    <Link class="nav-link" to="/cart">CARRITO</Link>
                     </li>
                 </ul>
             </div>

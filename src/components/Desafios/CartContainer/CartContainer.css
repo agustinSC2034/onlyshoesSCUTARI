@@ -1,0 +1,22 @@
+.flexCartContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.productCartContainer{
+    color: black;
+    text-align: center;
+    padding-bottom: 15px;
+    width: 20%;
+}
+
+.productCartContainer img {
+  width: 100%;
+}
+.productCartContainer h4{
+  font-size: 20px;
+}
+
