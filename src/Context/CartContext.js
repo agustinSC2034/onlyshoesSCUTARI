@@ -14,8 +14,19 @@ export const CartProvider = ({children})=>{
         setProductCartList(newList)
     }
 
+    const deleteProduct = (idProduct) =>{
+        const copyArrayOriginal = [...productCartList];
+        const newArray = copyArrayOriginal.filter(elm=>elm.id !== idProduct);
+        setProductCartList(newArray);
+    }
+
+    const deleteAll = () =>{
+        const productCartList2 = []
+        setProductCartList(productCartList2);
+    }
+
     return(
-        <CartContext.Provider value={{productCartList, addProduct}}>
+        <CartContext.Provider value={{productCartList, addProduct, deleteProduct, deleteAll}}>
             {children}
         </CartContext.Provider>
     )
