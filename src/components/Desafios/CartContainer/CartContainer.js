@@ -17,7 +17,6 @@ export const CartContainer = () => {
             <h4> Cantidad: {item.cantidad}</h4>
             <button onClick={()=> deleteProduct(item.id)} className="btn btn botonRojo">Borrar</button>
             <button className="btn btn-primary comprar">Comprar</button>
-            
           </div>
         ))}
         <button onClick={()=> deleteAll()} className="btn btn-primary botonRojo">Borrar todos los productos</button>
