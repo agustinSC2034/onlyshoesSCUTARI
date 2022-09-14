@@ -9,6 +9,9 @@ export const CartContainer = () => {
   return (
     <div>
       <div className="flexCartContainer">
+        {
+          productCartList.length>0 ?
+        <>
         {productCartList.map((item) => (
           <div className="productCartContainer">
             <img src={item.img} alt={item.title} />
@@ -17,9 +20,14 @@ export const CartContainer = () => {
             <h4> Cantidad: {item.cantidad}</h4>
             <button onClick={()=> deleteProduct(item.id)} className="btn btn botonRojo">Borrar</button>
             <button className="btn btn-primary comprar">Comprar</button>
+            <hr></hr>
           </div>
         ))}
         <button onClick={()=> deleteAll()} className="btn btn-primary botonRojo">Borrar todos los productos</button>
+        </>
+        :
+        <p>No has agregado productos</p>
+      }
       </div>
     </div>
   );

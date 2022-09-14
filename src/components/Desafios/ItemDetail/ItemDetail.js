@@ -11,6 +11,7 @@ export const ItemDetail = ({ item }) => {
     const newProduct = {...item, cantidad:contador}
     console.log('newProduct', newProduct);
     addProduct(newProduct);
+    
   } 
 
   return (

@@ -22,6 +22,7 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
       <div class="text-center">
         <p></p>
         <div class="text-center">
+          <p>Cantidad a agregar: {contador}</p>
           <p>Stock disponible: {stock - contador}</p>
           <button class="btn btn-primary" onClick={restar}>
             -
