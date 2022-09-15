@@ -5,29 +5,27 @@ import { createContext } from "react";
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
-  // const productCartList = arregloProductos;
   const [productCartList, setProductCartList] = useState([]);
 
   const isInCart = (id) => {
-    const elmIndex = productCartList.findIndex(product => product.id === id);
-    if (elmIndex >= 0) {
-      return { exist: true, index: elmIndex };
-    } else {
-      return { exist: false, index: undefined };
-    }
+    const elementExists = productCartList.some((elemento)=>elemento.id === id);
+        return elementExists;
   };
 
-  const addProduct = (product) => {
-    const inCartObj = isInCart(product.id);
-    if (inCartObj.exist) {
-      const productListCopy = [...productCartList];
-      productListCopy[inCartObj.index].cantidad = productListCopy[inCartObj.index].cantidad + product.cantidad;
-      setProductCartList(productListCopy)
-    } else {
-      const newList = [...productCartList,product];
+  const addProduct = (product, qty) => {
+    const newList = [...productCartList];
+    if(isInCart(product.id)){
+      const productIndex = productCartList.findIndex(element=>element.id===product.id);
+      newList[productIndex].cantidad = newList[productIndex].cantidad + qty;
+      newList[productIndex].precioTotal = newList[productIndex].cantidad * newList[productIndex].precio;
+      setProductCartList(newList)
+  } else{
+      const newProduct={...product, cantidad:qty, precioTotal: qty*product.precio}
+      const newList = [...productCartList];
+      newList.push(newProduct);
       setProductCartList(newList);
-    }
-  };
+  }
+}
 
   const deleteProduct = (idProduct) => {
     const copyArrayOriginal = [...productCartList];
@@ -40,6 +38,11 @@ export const CartProvider = ({ children }) => {
     setProductCartList(productCartList);
   };
 
+  const getTotalProducts = ()=>{
+    const totalProducts = productCartList.reduce((acc,item)=>acc + item.cantidad,0);
+    return totalProducts;
+}
+
   return (
     <CartContext.Provider
       value={{
@@ -48,6 +51,7 @@ export const CartProvider = ({ children }) => {
         deleteProduct,
         deleteAll,
         isInCart,
+        getTotalProducts,
       }}
     >
       {children}
