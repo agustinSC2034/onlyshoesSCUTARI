@@ -3,27 +3,23 @@ import './ItemDetailContainer.css';
 import { arregloProductos } from "../../baseDatos/helper";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../../Utils/firebase";
 
 export const ItemDetailContainer = ()=>{
     const {productId} = useParams();
-    console.log("productoId",productId);
     const [item, setItem] = useState({});
 
-    const getItem = (id)=>{
-        return new Promise((resolve, reject)=>{
-            const product = arregloProductos.find(item=>item.id === parseInt(productId));
-            console.log(product);
-            resolve(product)
-        })
-    }
-
     useEffect(()=>{
-        const getProducto = async()=>{
-            const producto = await getItem();
-            console.log('producto', producto)
-            setItem(producto);
-        }
-        getProducto();
+        const queryRef = doc(db,"items",productId);
+        getDoc(queryRef).then(response=>{
+            const newDoc = {
+                ...response.data(),
+                id:response.id
+            }
+            console.log(newDoc)
+            setItem(newDoc);
+        }).catch(error=>console.log(error));
     },[productId])
 
     console.log('item:', item)
