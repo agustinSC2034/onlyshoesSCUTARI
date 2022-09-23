@@ -8,24 +8,33 @@ export const CartProvider = ({ children }) => {
   const [productCartList, setProductCartList] = useState([]);
 
   const isInCart = (id) => {
-    const elementExists = productCartList.some((elemento)=>elemento.id === id);
-        return elementExists;
+    const elementExists = productCartList.some(
+      (elemento) => elemento.id === id
+    );
+    return elementExists;
   };
 
   const addProduct = (product, qty) => {
     const newList = [...productCartList];
-    if(isInCart(product.id)){
-      const productIndex = productCartList.findIndex(element=>element.id===product.id);
+    if (isInCart(product.id)) {
+      const productIndex = productCartList.findIndex(
+        (element) => element.id === product.id
+      );
       newList[productIndex].cantidad = newList[productIndex].cantidad + qty;
-      newList[productIndex].precioTotal = newList[productIndex].cantidad * newList[productIndex].precio;
-      setProductCartList(newList)
-  } else{
-      const newProduct={...product, cantidad:qty, precioTotal: qty*product.precio}
+      newList[productIndex].precioTotal =
+        newList[productIndex].cantidad * newList[productIndex].precio;
+      setProductCartList(newList);
+    } else {
+      const newProduct = {
+        ...product,
+        cantidad: qty,
+        precioTotal: qty * product.precio,
+      };
       const newList = [...productCartList];
       newList.push(newProduct);
       setProductCartList(newList);
-  }
-}
+    }
+  };
 
   const deleteProduct = (idProduct) => {
     const copyArrayOriginal = [...productCartList];
@@ -38,10 +47,21 @@ export const CartProvider = ({ children }) => {
     setProductCartList(productCartList);
   };
 
-  const getTotalProducts = ()=>{
-    const totalProducts = productCartList.reduce((acc,item)=>acc + item.cantidad,0);
+  const getTotalProducts = () => {
+    const totalProducts = productCartList.reduce(
+      (acc, item) => acc + item.cantidad,
+      0
+    );
     return totalProducts;
-}
+  };
+
+  const getTotalPrice = () => {
+    const totalPriceProducts = productCartList.reduce(
+      (acc, item) => acc + item.precioTotal,
+      0
+    );
+    return totalPriceProducts;
+  };
 
   return (
     <CartContext.Provider
@@ -52,6 +72,7 @@ export const CartProvider = ({ children }) => {
         deleteAll,
         isInCart,
         getTotalProducts,
+        getTotalPrice,
       }}
     >
       {children}
