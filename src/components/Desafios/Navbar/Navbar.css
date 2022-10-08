@@ -1,0 +1,18 @@
+.navEspecial{
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-family: 'Karla', sans-serif;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.navEspecial:hover{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(197, 255, 236);
+    font-weight: bold;
+}

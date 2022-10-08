@@ -39,6 +39,7 @@ export const CartContainer = () => {
   };
 
   return (
+    <>
     <div>
       <div className="flexCartContainer">
         {productCartList.length > 0 ? (
@@ -80,5 +81,6 @@ export const CartContainer = () => {
         )}
       </div>
     </div>
+</>
   );
 };

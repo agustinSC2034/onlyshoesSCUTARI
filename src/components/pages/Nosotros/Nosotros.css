@@ -10,16 +10,16 @@
 }
 
 .logoPortada{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: url(../../../img/Adidas/Zapatillas_adidas_Continental_80.jpg);
-        background-blend-mode: soft-light;    
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 190px;
-        height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../../img/otras/only1.png);
+    background-blend-mode: soft-light;    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 270px;
 }
 
 .menuNosotros {

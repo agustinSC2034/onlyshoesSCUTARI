@@ -9,17 +9,17 @@
     height: 40vh;
 }
 
-.logoPortada{
+.logoPortadaContacto{
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url(../../../img/Adidas/Zapatillas_adidas_Forum_Mid.jpg);
+        background-image: url(../../../img/otras/only1.png);
         background-blend-mode: soft-light;    
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        width: 190px;
-        height: 150px;
+        width: 250px;
+        height: 270px;
 }
 
 .newsletterContenedor {
@@ -94,7 +94,7 @@
     color: #333;
     letter-spacing: 1px;
     font-weight: bold;
-    
+    font-family: 'Karla', sans-serif;
 }
 
 form{

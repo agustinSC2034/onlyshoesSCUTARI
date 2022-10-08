@@ -11,6 +11,7 @@ import CartWidget from "./components/Desafios/CartWidget/CartWidget";
 import { CartContainer } from "./components/Desafios/CartContainer/CartContainer";
 import ItemCount from "./components/Desafios/ItemCount/ItemCount";
 import { CartProvider } from "./Context/CartContext";
+import { FooterNuevoComponente } from "./components/Footer/FooterNuevoComponente";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="*" element={<Home />} />
           </Routes>
+          <FooterNuevoComponente></FooterNuevoComponente>
         </div>
       </BrowserRouter>
       </CartProvider>

@@ -34,3 +34,36 @@
   background-color: rgb(0, 90, 160);
   color: white;
 }
+
+.menuCarrito{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.carritoClass{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.comprarButton{
+  background-color: blue;
+}
+.comprarButton:hover{
+  background-color: black;
+}
+.vaciarButton{
+  background-color: blue;
+}
+.vaciarButton:hover{
+  background-color: black;
+}
+.shopingCarrito{
+  display: flex;
+}
+.vaciarButtonCarro:hover {
+  transform: scale(1.1);
+}
+.comprarButton:hover {
+  transform: scale(1.1);
+}

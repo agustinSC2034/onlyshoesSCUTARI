@@ -8,7 +8,7 @@ export const Item = ({item})=>{
       <div className="product">
           <img src={item.img} alt={item.title}/>
           <h4>{item.nombre}</h4>
-          <p>$ {item.precio}</p>
+          <p className="precio">$ {item.precio}</p>
           <Link to={`/item/${item.id}`}>
           <button className="btn btn-primary">Ver detalle</button>
           </Link>
