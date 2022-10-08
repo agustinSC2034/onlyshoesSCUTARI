@@ -1,0 +1,176 @@
+.portada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    height: 40vh;
+}
+
+.logoPortada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../../../img/Adidas/Zapatillas_adidas_Forum_Mid.jpg);
+        background-blend-mode: soft-light;    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 150px;
+}
+
+.newsletterContenedor {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: rgb(35, 35, 35);
+  }
+  
+  .newsletter {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .newsletter h1 {
+    font-size: 25px;
+  }
+  
+  .inputContactNewsletter {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .inputContactNewsletter button {
+    background: white;
+    color: black;
+    border-color: black;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .newsletter .email {
+    height: 35px;
+    width: 68%;
+    margin: 30px 20px;
+    text-align: center;
+    font-size: 1em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    letter-spacing: 1px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .menuContacto{
+    height: auto;
+    width: 100%;
+}
+
+.textoContacto{      
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.textoContacto h3{
+    font-size: 25px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: bold;
+    
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 700px;
+    width: 70%;
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+    gap: 15px;
+}
+
+.tituloContact {
+    height: 20px;
+    width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.inputContact {
+    height: 35px;
+    width: 500px;
+    margin-bottom: 3%;
+}
+
+.inputContact input {
+    display: flex;
+    width: 500px;
+    height: 35px;
+    text-align: start;
+    font-size: 1.0em;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    letter-spacing: 1px;
+}
+
+.inputContact label {
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.textAreaContact {
+    width: 500px;
+}
+
+.textAreaContact textarea {
+    width: 500px;
+    letter-spacing: 1px;
+}
+
+.buttonsForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+}
+
+.buttonsForm button{
+    height: 40px;
+    width: 230px;
+    letter-spacing: 1px;
+}
+
+.buttonsForm button:hover{
+    background-color: rgb(42, 158, 230);
+}

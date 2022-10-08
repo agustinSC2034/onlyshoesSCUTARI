@@ -4,6 +4,7 @@ import { Navbar } from "./components/Desafios/Navbar/Navbar";
 import { ItemListContainer } from "./components/Desafios/ItemListContainer/itemListContainer";
 import { ItemDetailContainer } from "./components/Desafios/ItemDetailContainer/ItemDetailContainer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Home } from "./components/pages/Home/Home";
 import { Nosotros } from "./components/pages/Nosotros/Nosotros";
 import { Contacto } from "./components/pages/Contacto/Contacto";
 import CartWidget from "./components/Desafios/CartWidget/CartWidget";
@@ -18,7 +19,7 @@ function App() {
         <div className="App">
           <Navbar CartWidget={CartWidget} />
           <Routes>
-            <Route path="/" element={<ItemListContainer />} />
+            <Route path="/" element={<Home/>} />
             <Route path="/Marcas" element={<ItemListContainer />} />
             <Route
               path="/Marcas/:tipoProducto"
@@ -28,7 +29,7 @@ function App() {
             <Route path="/cart" element={<CartContainer />} />
             <Route path="/Nosotros" element={<Nosotros />} />
             <Route path="/Contacto" element={<Contacto />} />
-            <Route path="*" element={<ItemListContainer />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </div>
       </BrowserRouter>

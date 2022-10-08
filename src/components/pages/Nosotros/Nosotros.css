@@ -1,0 +1,151 @@
+.portada {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-top: none;
+    border-right: none;
+    height: 40vh;
+}
+
+.logoPortada{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../../../img/Adidas/Zapatillas_adidas_Continental_80.jpg);
+        background-blend-mode: soft-light;    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 190px;
+        height: 150px;
+}
+
+.menuNosotros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.textoMenuContainerNosotros{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 400px;
+   gap: 40px;
+}
+
+.texto-menuNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+    text-align: left;
+    padding-top: 10px;
+    height: 300px;
+    width: 43%;
+    gap: 25px;
+    letter-spacing: 1px;
+}
+
+.texto-menuNosotros h3{
+    justify-content: left;
+    font-weight: bold;
+}
+
+.containerInfoNosotros {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: rgb(35, 35, 35);
+}
+
+.containerInfoInsideNosotros {
+    display: flex;
+    flex-direction: row;
+    width: 89%;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.containerInfoInsideNosotros .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.containerInfoInsideNosotros .info h3{
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.containerInfoInsideNosotros .info h3 span{
+    color: rgb(42, 158, 230);
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.sliderContenedor{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.textoSlider h3 {
+    font-weight: bold;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+}
+
+.imagenesMarcas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenesMarcas .img1{
+    width: 28%;
+    height: auto;
+}
+
+.containerMarcas{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 100%;
+    margin-top: 80px;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 90px;
+  }
+
+  .containerMarcas2{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
