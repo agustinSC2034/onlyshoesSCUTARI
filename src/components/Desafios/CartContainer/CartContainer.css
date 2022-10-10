@@ -1,69 +1,226 @@
-.flexCartContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+.flexCartContainer {
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin: 30px;
 }
 
-.productCartContainer{
-    color: black;
-    text-align: center;
-    padding-bottom: 15px;
-    width: 20%;
+.productCartContainer {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  color: black;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  gap: 3%;
+}
+
+.productCartContainer h4{
+  font-size: 15px;
+  color: rgb(61, 61, 61);
+}
+
+.descripcionDiv{
+  display: flex;
+  width: 96%;
+  height: 35px;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+
+.espacioImg{
+  display: flex;
+  width: 10%;
+  height: 20px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.espacioNombre{
+  display: flex;
+  width: 35%;
+  height: 20px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.espacioPrecio{
+  display: flex;
+  width: 13%;
+  height: 20px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.espacioCantidad{
+  display: flex;
+  width: 13%;
+  height: 20px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.espacioPrecioTotal{
+  display: flex;
+  width: 13%;
+  height: 20px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.espacioBotones{
+  display: flex;
+  width: 9%;
+  height: 20px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCreadoProducto {
+  display: flex;
+  flex-direction: row;
+  background-color: green;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  height: 80px;
+  gap: 1%;
+  letter-spacing: 1px;
+  font-family: "Karla", sans-serif;
+}
+
+.divImgProducto {
+  display: flex;
+  width: 10%;
+  height: 80px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
 }
 
 .productCartContainer img {
   width: 100%;
-}
-.productCartContainer h4{
-  font-size: 20px;
+  height: 100%;
 }
 
-.botonRojo {
+.divNombreProducto {
+  display: flex;
+  width: 35%;
+  height: 80px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.divPrecioProducto {
+  display: flex;
+  width: 13%;
+  height: 80px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCantidadProducto {
+  display: flex;
+  width: 13%;
+  height: 80px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.divPrecioTotalProducto {
+  display: flex;
+  width: 13%;
+  height: 80px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonesCarro {
+  display: flex;
+  flex-direction: column;
+  width: 9%;
+  height: 80px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.divButtonBorrarProducto {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.divButtonBorrarProducto button {
   background-color: red;
   color: white;
+  width: 75%;
+  font-size: 13px;
 }
 
-.botonRojo:hover {
+.divButtonBorrarProducto button:hover {
   background-color: rgb(161, 5, 5);
   color: white;
+}
+
+.divButtonComprarProducto {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: aquamarine;
+  justify-content: center;
+  align-items: center;
+}
+
+.divButtonComprarProducto button {
+  width: 75%;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+}
+
+.formDiv {
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 80vh;
+  width: 40%;
+  margin-top: 1%;
+  gap: 3%;
+}
+
+.formCompra {
+  display: flex;
+  flex-direction: column;
 }
 
 .comprar:hover {
   background-color: rgb(0, 90, 160);
   color: white;
-}
-
-.menuCarrito{
-  display: flex;
-  flex-direction: column;
-  height: auto;
-}
-
-.carritoClass{
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.comprarButton{
-  background-color: blue;
-}
-.comprarButton:hover{
-  background-color: black;
-}
-.vaciarButton{
-  background-color: blue;
-}
-.vaciarButton:hover{
-  background-color: black;
-}
-.shopingCarrito{
-  display: flex;
-}
-.vaciarButtonCarro:hover {
-  transform: scale(1.1);
-}
-.comprarButton:hover {
-  transform: scale(1.1);
 }

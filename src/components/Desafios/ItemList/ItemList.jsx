@@ -9,11 +9,11 @@ export const ItemList = ({ items }) => {
         <div class="logoPortadaContacto"></div>
       </div>
       <div className="gridMayor">
-      <div className="grid-product">
-        {items.map((producto) => (
-          <Item key={producto.id} item={producto} />
-        ))}
-      </div>
+        <div className="grid-product">
+          {items.map((producto) => (
+            <Item key={producto.id} item={producto} />
+          ))}
+        </div>
       </div>
     </>
   );
