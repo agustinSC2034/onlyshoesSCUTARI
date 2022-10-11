@@ -1,16 +1,13 @@
 .flexCartContainer {
-  background-color: blue;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin: 30px;
 }
 
 .productCartContainer {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
   margin-top: 1%;
@@ -28,66 +25,77 @@
   color: rgb(61, 61, 61);
 }
 
+.tituloCarrito{
+  display: flex;
+  width: 96%;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1%;
+  letter-spacing: 1px;
+}
+
+.tituloCarrito h4{
+  font-family: "Karla", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
 .descripcionDiv{
   display: flex;
   width: 96%;
   height: 35px;
-  background-color: green;
-  justify-content: center;
   align-items: center;
-  gap: 1%;
+  gap: 2%;
+  border-bottom: 1px solid black;
+  justify-content: space-between;
 }
 
 .espacioImg{
   display: flex;
   width: 10%;
   height: 20px;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
 }
 
 .espacioNombre{
   display: flex;
-  width: 35%;
+  width: 30%;
   height: 20px;
-  background-color: aquamarine;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .espacioPrecio{
   display: flex;
-  width: 13%;
+  width: 15%;
   height: 20px;
-  background-color: aquamarine;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .espacioCantidad{
   display: flex;
-  width: 13%;
+  width: 16%;
   height: 20px;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
 }
 
 .espacioPrecioTotal{
   display: flex;
-  width: 13%;
+  width: 15%;
   height: 20px;
-  background-color: aquamarine;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .espacioBotones{
   display: flex;
-  width: 9%;
+  width: 15%;
   height: 20px;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
 }
@@ -95,21 +103,20 @@
 .divCreadoProducto {
   display: flex;
   flex-direction: row;
-  background-color: green;
   justify-content: center;
   align-items: center;
-  width: 96%;
-  height: 80px;
-  gap: 1%;
+  width: 95%;
+  height: 90px;
+  gap: 2%;
   letter-spacing: 1px;
   font-family: "Karla", sans-serif;
+  border-bottom: 1px solid black;
 }
 
 .divImgProducto {
   display: flex;
   width: 10%;
-  height: 80px;
-  background-color: aquamarine;
+  height: 100%;
   justify-content: center;
   align-items: center;
 }
@@ -117,50 +124,52 @@
 .productCartContainer img {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
 }
 
 .divNombreProducto {
   display: flex;
-  width: 35%;
+  width: 30%;
   height: 80px;
-  background-color: aquamarine;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+.divNombreProducto h4{
+  text-align: left;
 }
 
 .divPrecioProducto {
   display: flex;
-  width: 13%;
+  width: 15%;
   height: 80px;
-  background-color: aquamarine;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .divCantidadProducto {
   display: flex;
-  width: 13%;
+  width: 12%;
   height: 80px;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
 }
 
 .divPrecioTotalProducto {
   display: flex;
-  width: 13%;
+  width: 15%;
   height: 80px;
-  background-color: aquamarine;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .botonesCarro {
   display: flex;
   flex-direction: column;
-  width: 9%;
+  width: 15%;
   height: 80px;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
   gap: 5px;
@@ -170,16 +179,15 @@
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
 }
 
 .divButtonBorrarProducto button {
-  background-color: red;
   color: white;
-  width: 75%;
-  font-size: 13px;
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .divButtonBorrarProducto button:hover {
@@ -191,7 +199,6 @@
   display: flex;
   width: 100%;
   height: 100px;
-  background-color: aquamarine;
   justify-content: center;
   align-items: center;
 }
@@ -204,23 +211,138 @@
 }
 
 .formDiv {
-  background-color: purple;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   height: 80vh;
-  width: 40%;
+  width: 35%;
   margin-top: 1%;
   gap: 3%;
+  border-left: 1px solid black;
+  margin-bottom: 1%;
 }
 
-.formCompra {
+.formCompra{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85vh;
+  width: 100%;
+}
+
+.containerContact {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  height: 70vh;
+  width: 100%;
+  animation: fadeInUp;
+  animation-duration: 1.5s;
+  gap: 8%;
 }
 
-.comprar:hover {
-  background-color: rgb(0, 90, 160);
-  color: white;
+.inputContact {
+  height: 35px;
+  width: 95%;
+  margin-bottom: 3%;
+  padding-left: 3%;
 }
+
+.inputContact input {
+  display: flex;
+  width: 100%;
+  height: 35px;
+  text-align: start;
+  font-size: 1.0em;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  letter-spacing: 1px;
+}
+
+.inputContact label {
+  display: flex;
+  letter-spacing: 1px;
+}
+
+.textAreaContact {
+  width: 100%;
+}
+
+.textAreaContact textarea {
+  width: 500px;
+  letter-spacing: 1px;
+}
+
+.precioTotalForm{
+  display: flex;
+  width: 90%;
+  height: 25%;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  font-family: "Karla", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttonsForm{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1%;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  padding: 5%;
+  gap: 5%;
+}
+
+.buttonsForm button{
+  height: 40px;
+  width: 80%;
+  letter-spacing: 1px;
+}
+
+.buttonsForm button:hover{
+  background-color: rgb(42, 158, 230);
+}
+
+.buttonVaciarTodo{
+  background-color: red;
+  color: white;
+  width: 40%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*MEDIA: CELULAR GRANDE*/
+@media (min-width: 0px) and (max-width: 768px) {
+  .flexCartContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .formDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 80vh;
+    width: 95%;
+    margin-top: 1%;
+    gap: 3%;
+    border-top: 1px solid black;
+    border-left: none;
+    margin-bottom: 1%;
+  }
+}
+
+

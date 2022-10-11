@@ -4,6 +4,13 @@ import nikeMarca from "../../../img/otras/t_marcas_nike.png";
 import adidasMarca from "../../../img/otras/t_marcas_adidas.png";
 import pumaMarca from "../../../img/otras/t_marcas_puma.png";
 import nikeLogo from "../../../img/otras/logonike2.png";
+import adidasLogo from "../../../img/otras/logoadidas.png";
+import pumaLogo from "../../../img/otras/logopuma2.png"
+import filaLogo from "../../../img/otras/logofila2.png";
+import topperLogo from "../../../img/otras/logotopper2.png"
+import underarmourLogo from "../../../img/otras/logounderarmour2.png"
+import reebokLogo from "../../../img/otras/logoreebok2.png"
+import lottoLogo from "../../../img/otras/logolotto2.png"
 
 export const Nosotros = () => {
   return (
@@ -105,21 +112,21 @@ export const Nosotros = () => {
             <div className="col-md-2 col-sm-6 sm-6 col-xs-6">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={adidasLogo}
                 alt="Tarjeta"
               />
             </div>
             <div className="col-md-2 col-sm-6 sm-6 col-xs-6">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={pumaLogo}
                 alt="Tarjeta"
               />
             </div>
             <div className="col-md-2 col-sm-6 sm-6 md-2">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={filaLogo}
                 alt="Tarjeta"
               />
             </div>
@@ -128,28 +135,28 @@ export const Nosotros = () => {
             <div className="col-md-2 col-sm-6 sm-6 col-xs-6">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={reebokLogo}
                 alt="Tarjeta"
               />
             </div>
             <div className="col-md-2 col-sm-6 sm-6 col-xs-6">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={topperLogo}
                 alt="Tarjeta"
               />
             </div>
             <div className="col-md-2 col-sm-6 sm-6 col-xs-6">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={underarmourLogo}
                 alt="Tarjeta"
               />
             </div>
             <div className="col-md-2 col-sm-6 sm-6 md-2">
               <img
                 className="img-fluid img-brand d-block mx-auto"
-                src={nikeLogo}
+                src={lottoLogo}
                 alt="Tarjeta"
               />
             </div>

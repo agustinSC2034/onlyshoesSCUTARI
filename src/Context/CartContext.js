@@ -1,6 +1,7 @@
 import React, { Children, useState } from "react";
 import { arregloProductos } from "../components/baseDatos/helper";
 import { createContext } from "react";
+import Swal from "sweetalert2";
 
 export const CartContext = createContext();
 
@@ -15,6 +16,10 @@ export const CartProvider = ({ children }) => {
   };
 
   const addProduct = (product, qty) => {
+    Swal.fire({
+      icon: "success",
+      text: "Su producto fue agregado al carrito",
+    });
     const newList = [...productCartList];
     if (isInCart(product.id)) {
       const productIndex = productCartList.findIndex(
@@ -43,8 +48,20 @@ export const CartProvider = ({ children }) => {
   };
 
   const deleteAll = () => {
-    const productCartList = [];
-    setProductCartList(productCartList);
+    Swal.fire({
+      title: "Estas seguro?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire("Eliminado", "Su carrito a sido eliminado.", "Exito");
+        const productCartList = [];
+        setProductCartList(productCartList);
+      }
+    });
   };
 
   const getTotalProducts = () => {

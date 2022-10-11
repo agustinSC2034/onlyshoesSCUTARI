@@ -58,46 +58,6 @@ export const Navbar = (props) => {
                     Puma
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Fila
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Reebok
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Topper
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Vans
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Under Armour
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    New Balance
-                  </Link>
-                </li>
-                <li class="nav-item">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Converse
-                  </Link>
-                </li>
-                <li class="nav-item1">
-                  <Link class="navEspecial" to="/Marcas/Puma">
-                    Asics
-                  </Link>
-                </li>
               </ul>
             </li>
 
